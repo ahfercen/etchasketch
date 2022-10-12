@@ -1,1 +1,1 @@
-# etchasketch
+An etch-a-sketch like app for browsers
