@@ -1,5 +1,8 @@
 const container = document.querySelector(".container");
 const resetButton = document.querySelector(".Controls button");
+
+let size = 800;
+
 function resetFunc(x,y){
     let board = document.querySelector('.board');
     container.removeChild(board);
@@ -25,10 +28,12 @@ function createBoard(x,y){
         let row = document.createElement("div");
         row.classList.add(`row`);
         row.classList.add(`row${i}`);
+        row.style.height = size/y+"px";
         for(j=0;j<x;j++){
             let col = document.createElement("div");
             col.classList.add("col");
             col.classList.add(`col${j}`);
+            col.style.width = size/x+"px";
             row.appendChild(col);
             col.addEventListener('mouseover',hover);
             col.addEventListener('transitionend',goBack);

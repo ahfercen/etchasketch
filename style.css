@@ -16,13 +16,11 @@ body{
 .row{
     display: flex;
     justify-content: center;
-    height: 50px;
 }
 /* col styling */
 .col{
     background-color: darkgray;
     border: 0.01px solid black;
-    width: 50px;
     transition: background-color 0.3s ease 0.4s;
 }
 .hover{
