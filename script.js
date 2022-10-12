@@ -1,6 +1,7 @@
 const container = document.querySelector(".container");
-console.log(container);
-
+function hover(e){
+    
+}
 for(i = 0; i<16;i++){
     let row = document.createElement("div");
     row.classList.add(`row`);
@@ -10,6 +11,8 @@ for(i = 0; i<16;i++){
         col.classList.add("col");
         col.classList.add(`col${j}`);
         row.appendChild(col);
+        col.addEventListener('mouseover',hover);
     }
     container.appendChild(row);
 }
+
